@@ -1,0 +1,47 @@
+.megamenu {
+  position: static;
+}
+
+.megamenu .dropdown-menu {
+  opacity: 1;
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+.megamenu-background {
+  background-image: linear-gradient(to top,#cfd9df 0,#e2ebf0 100%);
+}
+
+/*.text-uppercase {
+  letter-spacing: 0.08em;
+}*/
+
+/*.nav-link, .ease-link {
+	transition: all .2s ease-in-out;
+}
+
+.nav-link:hover, .ease-link:hover {
+	color: #17a2b8 !important;
+  text-decoration: none;
+	transition: all .2s ease-in-out;
+}*/
+
+.show > .dropdown-menu {
+  opacity: 1;
+  max-height: 1440px;
+  visibility: visible;
+}
+
+.dropdown-menu {
+  display: block;
+  opacity: 0;
+  max-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+/*.menu-logo {
+  margin-right: 1rem;
+}*/

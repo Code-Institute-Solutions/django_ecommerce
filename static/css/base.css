@@ -1,0 +1,325 @@
+html {
+    height: 100%;
+}
+
+body {
+	background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+	background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: "Lato";
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.highlight {
+	font-weight: 700;
+}
+
+.homepage-title {
+	font-size: 7rem;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+.product-rating {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
+.desc-container {
+	max-height: 100px;
+	overflow: hidden;
+	transition: max-height .3s;
+}
+
+.read-more-link,
+.remove-item,
+.update-link {
+	cursor: pointer;
+}
+
+
+/* Bootstrap Toasts */
+
+.custom-toast {
+    overflow: visible;
+}
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px; /* matches container padding */
+    z-index: 99999999999;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+/* Convenience classes - colors copied from Bootstrap */
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+
+/* Allauth form formatting */
+
+.allauth-form-inner-content p {
+	margin-top: 1.5rem; /* mt-4 */
+	color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+	border-color: #000; /* text-black */
+    border-radius: 0;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* btn-info */
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: pointer;
+    display: block;
+}
+
+.btn-light.filter-hover-info:hover,
+.btn-light.filter-hover-info:active {
+    background: #17a2b8 !important;
+    color: #fff !important;
+}
+
+.sticky-sidebar {
+    position: sticky;
+    top: 104px;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.results-alert {
+    width: fit-content;
+    border-radius: 3px;
+}
+
+/* ---------------- For Redesign --------------- */
+
+.logo-font {
+    font-family: 'Lato';
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
+.bag-notification-wrapper {
+    max-height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Media queries */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    .arrow-up {
+        right: 46px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
